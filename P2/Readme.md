@@ -1,5 +1,4 @@
 <!DOCTYPE html PUBLIC "-//IETF//DTD HTML//EN">
-<!-- saved from url=(0070)https://courses.ncsu.edu/csc501/lec/002/wrap/assignments/mythread.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>MyThread Library</title>
 </head>
@@ -31,7 +30,7 @@ the following routines.
       run; the child thread will sit in the ready queue.
   </dd><dt><em>void <strong>MyThreadYield</strong>(void)</em>
   </dt><dd>Suspends execution of invoking thread and yield to another thread.
-      The invoking thread  remains ready to execute—it is not
+      The invoking thread  remains ready to executeâ€”it is not
       blocked.
       Thus, if there is no other ready thread, the invoking thread will
       continue to execute.
@@ -50,7 +49,7 @@ the following routines.
   </dd><dt><em>void <strong>MyThreadExit</strong>(void)</em>
   </dt><dd>Terminates the invoking thread.  <em><strong>Note:</strong></em>
       all <em>MyThread</em>s are required to invoke this function.
-      Do not allow functions to “fall out” of the start
+      Do not allow functions to â€œfall outâ€ of the start
       function.
 </dd></dl>
 </blockquote>
@@ -95,8 +94,8 @@ The following routine may be executed only by the Unix process.
       It is similar to invoking <em>MyThreadCreate</em> immediately
       followed by  <em>MyThreadJoinAll</em>.
       The <em>MyThread</em> created is the oldest ancestor of all
-      <em>MyThread</em>s—it is the
-      “main” <em>MyThread</em>.
+      <em>MyThread</em>sâ€”it is the
+      â€œmainâ€ <em>MyThread</em>.
       This routine can only be invoked once.
       It returns when there are no threads available to run (i.e.,
       the thread ready queue is empty.
